@@ -292,15 +292,17 @@ nav .links a:hover::after{
 @media screen and (max-width: 1024px) {
     .gradient-text,
     .hero-text h1 {
-        font-size: 3rem; /* Slightly smaller font for tablets */
+        font-size: 3rem; 
     }
 }
 
 @media screen and (max-width: 768px) {
     .hero-container {
-        flex-direction: column; /* Stack items vertically on mobile */
+        flex-direction: column; 
         text-align: center; /* Center align text on mobile */
         padding: 1rem 0;
+        
+        margin-top: -7rem;
     }
 
     .hero-text {
@@ -405,6 +407,7 @@ nav .links a:hover::after{
 @media (max-width: 768px) {
     .companies-section {
         padding: 0 40px;
+        
     }
 
     .company {
@@ -426,7 +429,7 @@ nav .links a:hover::after{
 
     .companies-section {
         padding: 0 20px;
-        margin: 3rem 0;
+        margin: -3rem 0 3rem 0;
     }
 
     .company-track {
@@ -669,6 +672,25 @@ nav .links a:hover::after{
 }
 
 @media screen and (max-width: 576px) {
+    .comp-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .comp-text{
+        order: 1;
+        margin-top: 1rem;
+    }
+    .comp-container .image-one{
+        order: 2;
+        margin-bottom: 2rem;
+    }
+    .comp-container .image-two{
+        order: 3;
+    }
+    .circular-text {
+        width: 100px;
+        height: 100px;
+    }
     .comp-container .image-one img,
     .comp-container .image-two img {
         width: 100%;
