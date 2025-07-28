@@ -301,7 +301,7 @@ nav .links a:hover::after{
         flex-direction: column; 
         text-align: center; /* Center align text on mobile */
         padding: 1rem 0;
-        
+        min-height: auto;
         margin-top: -7rem;
     }
 
